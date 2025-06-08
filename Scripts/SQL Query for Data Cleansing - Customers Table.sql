@@ -60,7 +60,7 @@ FROM (
 	FROM bronze.stg_customers)t
 	WHERE flag = 1
 )
--- Collecting all cleaned columns
+-- Collecting all cleaned columns into silver layer
 INSERT INTO silver.Customers (
 						CustomerID,
 						FirstName,
@@ -77,8 +77,7 @@ SELECT
 		City,
 		State,
 		Signupdate
-FROM CTE_Customers
-ORDER BY Signupdate DESC;
+FROM CTE_Customers;
 
 -- Verify data in silver layer
 SELECT 
@@ -90,3 +89,46 @@ SELECT
 	State,
 	Signupdate
 FROM silver.Customers;
+
+-- Verifying Data quality in silver layer
+-- Checking for effectiveness of fixes
+-- Expectations: Empty results 
+
+SELECT 
+	CustomerID,
+	COUNT(*) AS Checks
+FROM silver.Customers
+GROUP BY CustomerID
+HAVING COUNT(*) > 1 OR CustomerID IS NULL;
+
+-- Check string values for unwanted spaces
+SELECT FirstName
+FROM silver.Customers
+WHERE FirstName != TRIM(FirstName);
+
+SELECT LastName
+FROM silver.Customers
+WHERE LastName != TRIM(LastName);
+
+SELECT Email
+FROM silver.Customers
+WHERE Email != TRIM(Email);
+
+SELECT State
+FROM silver.Customers
+WHERE State != TRIM(State);
+
+-- Checking for data inconsistencies in categorical columns
+SELECT DISTINCT
+	City
+FROM silver.Customers;
+
+SELECT DISTINCT
+	State
+FROM silver.Customers;
+
+-- Checks date inconsistencies
+SELECT 
+	*
+FROM silver.Customers
+WHERE ISDATE(Signupdate) = 0;

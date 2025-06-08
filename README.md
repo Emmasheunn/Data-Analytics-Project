@@ -9,4 +9,4 @@ This project is licensed under the MIT License. You are free to use, modify, and
 
 ## **About Me:**
 Hello there 👋,
-I'm **Oluwadare Oluwaseun Emmanuel**, also known as *Cuzie's*. I'm an entry level Data Analyst and I'm passionate about the immense potential of Data in an ever-expanding world 🌍
+I'm **Oluwadare Oluwaseun Emmanuel**. I'm an entry level Data Analyst and I'm passionate about understanding the potential role of Data in driving decision-making in an ever-expanding world 🌍

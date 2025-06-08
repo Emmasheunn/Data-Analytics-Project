@@ -1,4 +1,4 @@
-Data WarehouseAnalytics Project
+Hello and Welcome to my Data WarehouseAnalytics Project
 
 This project simulates a workflow that integrates data warehousing processes, ETL process and Data Analysis using SQL Server to consolidate sales data enabling analytical reporting and informed decision-making through Power BI & Tableau.
 

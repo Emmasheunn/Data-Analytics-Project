@@ -3,7 +3,7 @@
 Data Cleansing - Customers Table
 -----------------------------------------------------------------
 Objective:
-This scripts handles all nulls according to project requirements.
+This scripts handles all data quality issues according to project requirements.
 These fixes were effected only after careful checks on each column.
 Fixes include:
 - Handling duplicate values in Primary key

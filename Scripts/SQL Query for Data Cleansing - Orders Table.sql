@@ -51,11 +51,11 @@ CTE_CleanedOrders AS (
         o.ProductID,
         o.OrderDate,
         o.Quantity,
-        -- Recalculate TotalAmount using validated price
+-- Recalculate TotalAmount using validated price
         CAST(ROUND(o.Quantity * p.Price, 2) AS NVARCHAR) AS TotalAmount
     FROM CTE_DeduplicatedOrders o
     LEFT JOIN CTE_ValidPrices p ON o.ProductID = p.ProductID
-    WHERE p.Price IS NOT NULL -- Exclude products without valid prices
+    WHERE p.Price IS NOT NULL /* Exclude products without valid prices */
 )
 
 -- Insert cleaned records into the silver layer

@@ -3,7 +3,7 @@
 Data Cleansing - Orders Table
 -----------------------------------------------------
 Objective:
-This script handles data cleansing for orders based on project rules.
+This script handles all data quality issues in the orders table based on project rules.
 Fixes include:
 - Removing duplicates in primary key (OrderID)
 - Cleaning inconsistent date formats

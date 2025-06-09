@@ -1,5 +1,5 @@
-#Data Exploration:
-##Analyzing source tables.
+# Data Exploration:
+## Analyzing source tables.
 
 ### For bronze.stg_customers table.
 - Primary key is CustomerID.

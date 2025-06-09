@@ -1,4 +1,4 @@
-# Data Exploration:
+# Data Exploration
 ## Analyzing source tables.
 
 ### For bronze.stg_customers table.

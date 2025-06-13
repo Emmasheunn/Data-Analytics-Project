@@ -1,6 +1,6 @@
 # **Hello and Welcome to my Data WarehouseAnalytics Project**
 
-This project simulates a workflow and integrates data warehousing processes, ETL process and Data Analysis using SQL Server to consolidate sales data enabling analytical reporting and informed decision-making through Power BI & Tableau.
+This project simulates a workflow and integrates data warehousing processes, ETL process and Data Analysis using SQL Server to consolidate sales data enabling analytical reporting through Power BI & Tableau and ultimately, informed decision-making.
 
 Please find all resources such as the Projects Requirements, Database architecture, Data Flow diagram and detailed planning and execution steps (Notion) in the resources folder.
 

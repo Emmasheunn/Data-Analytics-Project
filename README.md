@@ -2,7 +2,9 @@
 
 This project simulates a workflow and integrates data warehousing processes, ETL process and Data Analysis using SQL Server to consolidate sales data enabling analytical reporting through Power BI & Tableau and ultimately, informed decision-making.
 
-Please find all resources such as the Projects Requirements, Database architecture, Data Flow diagram and detailed planning and execution steps (Notion) in the resources folder.
+This project takes it one step further by creating two amazingly insightful dashboards in Tableau.
+
+Please find all resources such as the Projects Requirements, Database architecture, Data Flow diagram, Dashboard snapshots and detailed planning and execution steps (Notion) in the Documentations folder.
 
 ## **License:**
 This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
